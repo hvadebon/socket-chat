@@ -2,7 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-app.get('https://git.heroku.com/youchatwithme.git
+app.get('youchatwithme.herokuapp.com
 ', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
